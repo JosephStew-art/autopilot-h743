@@ -1,0 +1,3359 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "1cbea74b-cedf-5999-9113-9fc78c0f94ce")
+	(paper "A3")
+	(title_block
+		(title "09 | Serial peripheral connections")
+		(date "2026-10-11")
+		(rev "A")
+		(company "Joseph Stewart / H743 autopilot")
+		(comment 1 "3.3V logic. Custom ArduPilot target required. Prototype revision A.")
+	)
+	(lib_symbols
+		(symbol "Autopilot_H743:ESD"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0.635 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "USBLC6-2SC6"
+				(at 0.635 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Autopilot_H743:Package_TO_SOT_SMD__SOT-23-6"
+				(at 1.27 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0d3a2ab954b34651a0695e7ccf534db0.pdf?productCode=C7519"
+				(at 1.27 -8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Package_TO_SOT_SMD__SOT-23-6"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ESD_0_0"
+				(circle
+					(center -1.524 0)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.508 2.032)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.508 -4.572)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.508 2.032)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.508 -4.572)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.524 -2.54)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ESD_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.508) (xy -1.016 0.508) (xy -1.524 1.524) (xy -2.032 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -3.048) (xy -1.016 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.524) (xy -2.032 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy -2.032 -4.064) (xy -1.524 -3.048) (xy -1.016 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -1.143) (xy -0.508 -0.762) (xy 0.508 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -0.508 2.032) (xy 0.508 2.032) (xy 0 1.524) (xy 0 -4.064) (xy -0.508 -4.572) (xy 0.508 -4.572)
+						(xy 0 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.778) (xy -0.508 -1.778) (xy 0 -0.762) (xy 0.508 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.524) (xy 2.032 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -3.048) (xy 2.032 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0.508) (xy 1.016 0.508) (xy 1.524 1.524) (xy 2.032 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -4.064) (xy 1.016 -4.064) (xy 1.524 -3.048) (xy 2.032 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ESD_1_1"
+				(rectangle
+					(start -2.54 2.794)
+					(end 2.54 -5.334)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.032) (xy -1.524 2.032) (xy -1.524 -4.572) (xy -0.508 -4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -4.572) (xy 1.524 -4.572) (xy 1.524 2.032) (xy 0.508 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Autopilot_H743:J4"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "JST-GH 4P"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Autopilot_H743:Connector_JST__JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/6c69dfd9744c15167b2bdb9469440f45.pdf?productCode=C161692"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector_JST__JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "J4_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Autopilot_H743:R33"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "33 / 1%"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Autopilot_H743:Resistor_SMD__R_0603_1608Metric"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23140"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Resistor_SMD__R_0603_1608Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R33_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R33_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "All serial connectors: 1 = 5V_PERIPH, 2 = flight-controller TX, 3 = flight-controller RX, 4 = GND.\nConnect TX to peripheral RX and RX to peripheral TX. No RS-232 levels and no 5V logic.\n5V_PERIPH is MAIN-powered only and limited to ~0.5A total across all six ports. Use separate power for larger loads.\nUSART6 is reserved by convention for a serial receiver (CRSF / SBUS with MCU inversion configured).\nNo RTS/CTS, external inverter or PPM input is fitted. Prevent powered peripherals back-feeding an unpowered board."
+		(exclude_from_sim no)
+		(at 20 225 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+			(justify left top)
+		)
+		(uuid "441a566b-f952-5b7c-a3b5-f9af38973254")
+	)
+	(text "SERIAL PORTS | 3.3 V TTL | SHARED EXTERNAL 5 V SUPPLY"
+		(exclude_from_sim no)
+		(at 20 18 0)
+		(effects
+			(font
+				(size 2.35 2.35)
+			)
+			(justify left top)
+		)
+		(uuid "4f1f0b49-2e0d-56ec-a897-c2dccc1ed04d")
+	)
+	(text "USART2 | TX PD5 / RX PD6"
+		(exclude_from_sim no)
+		(at 292.1 35.56 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "a2d4c99c-c702-51d5-acfe-e2276585d86e")
+	)
+	(text "USART1 | TX PA9 / RX PA10"
+		(exclude_from_sim no)
+		(at 160.02 35.56 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "bf271d3a-4d5b-554a-8893-fed79db6ecb4")
+	)
+	(text "UART7 | TX PE8 / RX PE7"
+		(exclude_from_sim no)
+		(at 27.94 35.56 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "ccd78b17-f1dd-54ee-883b-a04899f92a87")
+	)
+	(wire
+		(pts
+			(xy 60.96 60.96) (xy 57.15 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "000dad13-ccf8-5e70-b725-cf9d2c0e3084")
+	)
+	(wire
+		(pts
+			(xy 193.04 180.34) (xy 189.23 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "081851cb-2bae-59b6-ae7f-6857b9bceb90")
+	)
+	(wire
+		(pts
+			(xy 60.96 63.5) (xy 57.15 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a58939f-f4d7-5375-8a94-2c491f8220e5")
+	)
+	(wire
+		(pts
+			(xy 325.12 60.96) (xy 321.31 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "188b317e-5bf7-50c6-a128-45f6cd0fe5d9")
+	)
+	(wire
+		(pts
+			(xy 203.2 182.88) (xy 207.01 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b23038c-aa41-51b5-94fe-2da447b0a187")
+	)
+	(wire
+		(pts
+			(xy 66.04 175.26) (xy 66.04 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bbd8c17-3fb9-5ed8-9ab9-6edea70f36c2")
+	)
+	(wire
+		(pts
+			(xy 69.85 132.08) (xy 73.66 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bf619b2-0b92-5cc5-b8fb-1b438df5d524")
+	)
+	(wire
+		(pts
+			(xy 198.12 187.96) (xy 198.12 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e232243-f237-53f6-b2e9-330e0de9d6e3")
+	)
+	(wire
+		(pts
+			(xy 326.39 106.68) (xy 322.58 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25945113-00a0-5d38-bd8f-aee41c2756a2")
+	)
+	(wire
+		(pts
+			(xy 325.12 182.88) (xy 321.31 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "264c54c5-377a-5a98-bf2e-df47945bfd7f")
+	)
+	(wire
+		(pts
+			(xy 325.12 63.5) (xy 321.31 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "495ffc28-9357-5aec-b4eb-8a8a8efcc02c")
+	)
+	(wire
+		(pts
+			(xy 334.01 132.08) (xy 337.82 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49aed4b1-ea97-55cc-a259-427ab97e637b")
+	)
+	(wire
+		(pts
+			(xy 71.12 180.34) (xy 74.93 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4baeca00-8730-54db-8b0b-18e0e5f825af")
+	)
+	(wire
+		(pts
+			(xy 193.04 63.5) (xy 189.23 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cd8ae14-ea7b-5912-9f2e-dfdfae8c0c49")
+	)
+	(wire
+		(pts
+			(xy 60.96 180.34) (xy 57.15 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55f07e04-084a-5bc3-b53f-4e64db171128")
+	)
+	(wire
+		(pts
+			(xy 193.04 182.88) (xy 189.23 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b4b204d-a146-5685-92b4-315a0e2d32b0")
+	)
+	(wire
+		(pts
+			(xy 325.12 66.04) (xy 321.31 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "722dd38c-9b02-5dc0-9f1f-910516cb1114")
+	)
+	(wire
+		(pts
+			(xy 198.12 175.26) (xy 198.12 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "742b6b41-d4f3-5f85-8882-e44e05f323a9")
+	)
+	(wire
+		(pts
+			(xy 335.28 180.34) (xy 339.09 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dfba0fc-0fb7-56e0-bedb-8752190398c7")
+	)
+	(wire
+		(pts
+			(xy 193.04 60.96) (xy 189.23 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f13e354-51e1-5f3e-b6c0-357ea46b11ec")
+	)
+	(wire
+		(pts
+			(xy 62.23 106.68) (xy 58.42 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85ef09a8-8166-5e69-aee5-7b89e01e5fbe")
+	)
+	(wire
+		(pts
+			(xy 203.2 180.34) (xy 207.01 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8917eff2-71f5-5253-a3b2-0cab69a50e87")
+	)
+	(wire
+		(pts
+			(xy 71.12 182.88) (xy 74.93 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fc96d30-edc4-5efd-a21a-1a681e74f25a")
+	)
+	(wire
+		(pts
+			(xy 66.04 187.96) (xy 66.04 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98ab4b83-0b8f-5c2b-8bcb-d90372756351")
+	)
+	(wire
+		(pts
+			(xy 194.31 106.68) (xy 190.5 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9eb66876-670b-5e6d-8795-b608f365b149")
+	)
+	(wire
+		(pts
+			(xy 335.28 182.88) (xy 339.09 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a54e4427-07e9-5745-8800-31c90b7910b0")
+	)
+	(wire
+		(pts
+			(xy 325.12 180.34) (xy 321.31 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad839120-d32f-566c-9f73-086a89b10e1d")
+	)
+	(wire
+		(pts
+			(xy 334.01 106.68) (xy 337.82 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae887c8a-a0cd-51e5-abbb-412cd26c6393")
+	)
+	(wire
+		(pts
+			(xy 194.31 132.08) (xy 190.5 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4ebe173-8c5b-5012-993d-db9e5038457e")
+	)
+	(wire
+		(pts
+			(xy 193.04 68.58) (xy 189.23 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd06b44a-a34f-5093-92c7-ed65e731dd3d")
+	)
+	(wire
+		(pts
+			(xy 325.12 68.58) (xy 321.31 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c39a2826-215d-5631-842d-f41ffd1c9a99")
+	)
+	(wire
+		(pts
+			(xy 193.04 66.04) (xy 189.23 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca5fde33-1914-5cde-b05e-ee2f426efb78")
+	)
+	(wire
+		(pts
+			(xy 60.96 182.88) (xy 57.15 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb860aaf-7f74-5efe-b3a9-3d990d77435c")
+	)
+	(wire
+		(pts
+			(xy 69.85 106.68) (xy 73.66 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d02cad2f-5519-5c81-b5cd-875ded289980")
+	)
+	(wire
+		(pts
+			(xy 60.96 66.04) (xy 57.15 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9ce365c-a731-5461-a875-865da04ef7e7")
+	)
+	(wire
+		(pts
+			(xy 201.93 106.68) (xy 205.74 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da58973a-0e7b-5e11-bb5c-84dbdc240f80")
+	)
+	(wire
+		(pts
+			(xy 330.2 187.96) (xy 330.2 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2e1cff8-a279-5cdc-b451-d2b2171ba575")
+	)
+	(wire
+		(pts
+			(xy 62.23 132.08) (xy 58.42 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3551ec0-9022-5dcf-8957-539bdd4f2d41")
+	)
+	(wire
+		(pts
+			(xy 201.93 132.08) (xy 205.74 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e44d0f68-20ea-53ff-a3df-bb67c09731ba")
+	)
+	(wire
+		(pts
+			(xy 330.2 175.26) (xy 330.2 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6571ae2-554e-545a-a2f1-ab6c41a5a99a")
+	)
+	(wire
+		(pts
+			(xy 326.39 132.08) (xy 322.58 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea5292d1-4798-513b-af12-0e7693bd51fc")
+	)
+	(wire
+		(pts
+			(xy 60.96 68.58) (xy 57.15 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f74c2704-b69a-58cc-8633-5c5141c30164")
+	)
+	(global_label "UART7_RX"
+		(shape input)
+		(at 73.66 132.08 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "0754ef79-4f17-53d9-8921-c571394ff5d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.66 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 321.31 68.58 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "0f86f045-110a-507c-b6b6-f497d6a62a43")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 321.31 68.58 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART1_RX_EXT"
+		(shape input)
+		(at 189.23 182.88 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "1519e79c-aa21-5a0f-89d4-44138cf5f8c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.23 182.88 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART2_TX_EXT"
+		(shape input)
+		(at 337.82 106.68 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "158c363e-2d54-5091-b622-eae5e8c2ee69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 337.82 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART7_TX_EXT"
+		(shape input)
+		(at 57.15 180.34 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "1892fd6f-577a-5177-a324-6aa5454e88b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.15 180.34 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 198.12 191.77 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "30ac60d4-5fa9-5586-9f39-6cc8be03c06f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.12 191.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 330.2 191.77 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "3c12781a-fab5-5d74-ae44-08d07854c69d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 330.2 191.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART7_RX_EXT"
+		(shape input)
+		(at 57.15 66.04 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "4639c1e8-7391-5411-a574-2277916f74f6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.15 66.04 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART1_RX_EXT"
+		(shape input)
+		(at 207.01 182.88 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "4f2f2005-d38c-5d8d-a438-e8972048e2b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 207.01 182.88 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 189.23 68.58 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "50eace77-f06b-5cff-a489-1db2777610c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.23 68.58 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART1_RX"
+		(shape input)
+		(at 205.74 132.08 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "5760d25c-7160-56db-83ab-f7dd9c46224f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.74 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART1_TX_EXT"
+		(shape input)
+		(at 189.23 180.34 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "5bf5bc50-6505-5d0a-8178-e46759f0e86d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.23 180.34 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART7_TX"
+		(shape input)
+		(at 58.42 106.68 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "66278a5a-f1fa-5929-8e74-2d000651e555")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 58.42 106.68 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART7_RX_EXT"
+		(shape input)
+		(at 74.93 182.88 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "6b3bf655-fc64-5a80-a109-e5a0b5cd7012")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.93 182.88 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART1_TX_EXT"
+		(shape input)
+		(at 207.01 180.34 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "71a75620-8c5f-58d7-b758-8b7d38eb612e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 207.01 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART7_TX_EXT"
+		(shape input)
+		(at 57.15 63.5 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "86f1841c-4585-5ca3-b65f-49aba2cec4ed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.15 63.5 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V5_PERIPH"
+		(shape input)
+		(at 321.31 60.96 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "91c07141-a061-5625-996b-064383a42ded")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 321.31 60.96 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V3V3_CORE"
+		(shape input)
+		(at 66.04 171.45 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "9666503a-95a3-53f2-81d4-9365b8917664")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 171.45 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART2_RX_EXT"
+		(shape input)
+		(at 322.58 132.08 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "98e6ed55-6b8d-55ef-ab56-f7c0b8070817")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 322.58 132.08 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V3V3_CORE"
+		(shape input)
+		(at 330.2 171.45 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "98f7db30-d2d4-5d70-8ca1-a1e8665be5e2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 330.2 171.45 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V5_PERIPH"
+		(shape input)
+		(at 57.15 60.96 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "99ae2518-828f-5768-92bc-d2369743c5e7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.15 60.96 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART7_RX_EXT"
+		(shape input)
+		(at 58.42 132.08 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "9fc33468-f663-57d4-8e58-2cc34f004f1c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 58.42 132.08 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART2_TX_EXT"
+		(shape input)
+		(at 339.09 180.34 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "a039a049-c75d-52ad-b18c-e8caac94049f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 339.09 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART7_TX_EXT"
+		(shape input)
+		(at 74.93 180.34 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "a1d407b1-2206-5f68-a98c-c496e398b682")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.93 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART2_RX_EXT"
+		(shape input)
+		(at 321.31 182.88 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "a31650f3-ff8c-5ca5-9f67-ced486121f7b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 321.31 182.88 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART2_TX"
+		(shape input)
+		(at 322.58 106.68 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "a415576e-db79-5af4-b9a2-278cb754465f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 322.58 106.68 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART1_TX_EXT"
+		(shape input)
+		(at 189.23 63.5 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "a4a6ef23-e955-5433-a09a-f4cf699be7de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.23 63.5 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART2_TX_EXT"
+		(shape input)
+		(at 321.31 180.34 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "abd6ae59-a469-579d-81a5-3571aa0d728d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 321.31 180.34 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 66.04 191.77 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b12995af-0db3-53c8-b204-93eeadab258e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 191.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 57.15 68.58 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "bf9190f8-9c7f-57a4-8baa-4eb277c96c93")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.15 68.58 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART7_RX_EXT"
+		(shape input)
+		(at 57.15 182.88 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "c57e6447-829b-5faf-898a-7d2db1d44fbb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.15 182.88 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V3V3_CORE"
+		(shape input)
+		(at 198.12 171.45 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "d12bcdbe-3809-5326-a1e4-e9f33b2d4901")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.12 171.45 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART1_TX"
+		(shape input)
+		(at 190.5 106.68 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "d1b6123c-457c-5df3-a4db-f2654b3e9659")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.5 106.68 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART1_RX_EXT"
+		(shape input)
+		(at 189.23 66.04 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "d2d2410c-e981-5d79-880a-df08fe57fbb0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.23 66.04 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART2_TX_EXT"
+		(shape input)
+		(at 321.31 63.5 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "d5924950-db30-547d-8467-6f4c618f257f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 321.31 63.5 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART1_RX_EXT"
+		(shape input)
+		(at 190.5 132.08 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "d5a6fbaf-2926-50fe-91b6-5b23006b354e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.5 132.08 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART1_TX_EXT"
+		(shape input)
+		(at 205.74 106.68 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "dab185e4-05c2-525e-be42-6e0e700cc7f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.74 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V5_PERIPH"
+		(shape input)
+		(at 189.23 60.96 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "dd6382da-9014-5769-86c5-c92a37b50e36")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.23 60.96 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART2_RX_EXT"
+		(shape input)
+		(at 339.09 182.88 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "f64d166b-62b9-573a-996b-52a5054e24d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 339.09 182.88 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART2_RX_EXT"
+		(shape input)
+		(at 321.31 66.04 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "fd21b5dd-cf89-5846-82f4-3e445115c62c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 321.31 66.04 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART2_RX"
+		(shape input)
+		(at 337.82 132.08 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "fe528bfd-b152-5761-b7e5-18cd621a550e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 337.82 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART7_TX_EXT"
+		(shape input)
+		(at 73.66 106.68 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "ff6833ab-4202-5a8b-b971-fe53c6b93f1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.66 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:J4")
+		(at 198.12 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0962bf85-7358-5121-907e-63a283059576")
+		(property "Reference" "J6"
+			(at 198.12 54.61 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "USART1 peripheral"
+			(at 198.12 57.15 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Connector_JST__JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+			(at 198.12 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/6c69dfd9744c15167b2bdb9469440f45.pdf?productCode=C161692"
+			(at 198.12 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C161692"
+			(at 198.12 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C161692"
+			(at 198.12 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BM04B-GHS-TBT(LF)(SN)"
+			(at 198.12 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Connector_Generic.kicad_sym:Conn_01x04"
+			(at 198.12 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7fde7b29-0df3-54a7-8fce-6c82abc94a48")
+		)
+		(pin "2"
+			(uuid "be288ca7-5a8d-5caf-b05d-b0d27bc85392")
+		)
+		(pin "3"
+			(uuid "b4277330-c3c0-5425-809d-a80efe2f5a6b")
+		)
+		(pin "4"
+			(uuid "c664c8fd-a1eb-5224-b292-c10749c5f471")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:J4")
+		(at 330.2 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14d468a7-cbed-5d34-a14a-bf80bb7e517e")
+		(property "Reference" "J7"
+			(at 330.2 54.61 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "USART2 peripheral"
+			(at 330.2 57.15 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Connector_JST__JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+			(at 330.2 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/6c69dfd9744c15167b2bdb9469440f45.pdf?productCode=C161692"
+			(at 330.2 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C161692"
+			(at 330.2 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C161692"
+			(at 330.2 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BM04B-GHS-TBT(LF)(SN)"
+			(at 330.2 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Connector_Generic.kicad_sym:Conn_01x04"
+			(at 330.2 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9938d03-223d-58bd-bee5-67aea28463ce")
+		)
+		(pin "2"
+			(uuid "3c498398-8d4e-553f-b4d1-8dbd31011a57")
+		)
+		(pin "3"
+			(uuid "d66a608e-d4c7-50c0-8ea6-18e65eec21ca")
+		)
+		(pin "4"
+			(uuid "bbd78846-6c74-5837-ab28-c585a3726490")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:R33")
+		(at 66.04 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19d5455f-d63d-5279-b513-3c1e6a4974ff")
+		(property "Reference" "R39"
+			(at 66.04 101.6 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "33 / 1%"
+			(at 66.04 104.14 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Resistor_SMD__R_0603_1608Metric"
+			(at 66.04 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23140"
+			(at 66.04 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23140"
+			(at 66.04 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23140"
+			(at 66.04 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF330JT5E"
+			(at 66.04 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Device.kicad_sym:R"
+			(at 66.04 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "adea396e-274f-5b46-96c8-9aa475711640")
+		)
+		(pin "2"
+			(uuid "1340aacb-930e-58b3-909d-d829c6ebef49")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:R33")
+		(at 330.2 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5cd667ec-6334-5c60-882d-01c574988dd0")
+		(property "Reference" "R43"
+			(at 330.2 101.6 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "33 / 1%"
+			(at 330.2 104.14 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Resistor_SMD__R_0603_1608Metric"
+			(at 330.2 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23140"
+			(at 330.2 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23140"
+			(at 330.2 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23140"
+			(at 330.2 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF330JT5E"
+			(at 330.2 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Device.kicad_sym:R"
+			(at 330.2 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b75a30d-f9a6-5abf-a112-117e05b77bd4")
+		)
+		(pin "2"
+			(uuid "648f2ec3-7f3d-5493-8f76-1bddf19e1555")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:R33")
+		(at 330.2 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b9a91db-d2a7-5729-aa73-61cee802d1c0")
+		(property "Reference" "R44"
+			(at 330.2 127 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "33 / 1%"
+			(at 330.2 129.54 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Resistor_SMD__R_0603_1608Metric"
+			(at 330.2 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23140"
+			(at 330.2 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23140"
+			(at 330.2 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23140"
+			(at 330.2 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF330JT5E"
+			(at 330.2 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Device.kicad_sym:R"
+			(at 330.2 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10acd37b-605e-57be-85fb-f64c1758e305")
+		)
+		(pin "2"
+			(uuid "df8d60c3-8f36-5541-8fd6-ae558c763507")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:ESD")
+		(at 198.12 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "925451a3-727a-55f6-970c-42f4cd2d6317")
+		(property "Reference" "U14"
+			(at 215.9 167.64 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "USBLC6-2SC6"
+			(at 215.9 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Package_TO_SOT_SMD__SOT-23-6"
+			(at 198.12 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0d3a2ab954b34651a0695e7ccf534db0.pdf?productCode=C7519"
+			(at 198.12 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7519"
+			(at 198.12 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C7519"
+			(at 198.12 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "USBLC6-2SC6"
+			(at 198.12 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Power_Protection.kicad_sym:USBLC6-2SC6"
+			(at 198.12 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86f142f9-3701-595f-ab8a-55d0448062e1")
+		)
+		(pin "3"
+			(uuid "023ea12e-5baa-5f8a-9e77-b2f15c5b3c38")
+		)
+		(pin "5"
+			(uuid "87623008-2e4a-5b76-a9ff-0ca175ac2098")
+		)
+		(pin "2"
+			(uuid "0a18d454-16e0-5557-bbf6-fa3783a7c012")
+		)
+		(pin "6"
+			(uuid "63afd6db-7993-5d12-8c5e-92308262677f")
+		)
+		(pin "4"
+			(uuid "405154b2-f737-5dca-a17d-871887e9ae5e")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "U14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:ESD")
+		(at 330.2 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c439e6fa-1660-5b76-9ce1-52b242c5857e")
+		(property "Reference" "U15"
+			(at 347.98 167.64 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "USBLC6-2SC6"
+			(at 347.98 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Package_TO_SOT_SMD__SOT-23-6"
+			(at 330.2 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0d3a2ab954b34651a0695e7ccf534db0.pdf?productCode=C7519"
+			(at 330.2 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7519"
+			(at 330.2 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C7519"
+			(at 330.2 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "USBLC6-2SC6"
+			(at 330.2 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Power_Protection.kicad_sym:USBLC6-2SC6"
+			(at 330.2 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5d0f494-102c-57fc-b2c8-f72888424688")
+		)
+		(pin "3"
+			(uuid "8c29a987-ebb7-53bb-bc7b-3bc23960ec60")
+		)
+		(pin "5"
+			(uuid "0d1c5770-f914-5226-b336-554ad8388933")
+		)
+		(pin "2"
+			(uuid "e465f33f-04ed-512b-b384-104344c8f6a3")
+		)
+		(pin "6"
+			(uuid "d5a41ed0-6b19-5f94-9fa5-2c7abf3d081e")
+		)
+		(pin "4"
+			(uuid "2a825d9c-ab7f-5f55-b21e-6ee8c2dff8c4")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "U15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:R33")
+		(at 198.12 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c71dfe98-e92d-5119-b9fb-e925f630e2c7")
+		(property "Reference" "R42"
+			(at 198.12 127 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "33 / 1%"
+			(at 198.12 129.54 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Resistor_SMD__R_0603_1608Metric"
+			(at 198.12 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23140"
+			(at 198.12 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23140"
+			(at 198.12 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23140"
+			(at 198.12 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF330JT5E"
+			(at 198.12 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Device.kicad_sym:R"
+			(at 198.12 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28b82d75-de2f-51e3-9a4c-a76250e9374c")
+		)
+		(pin "2"
+			(uuid "6878f6f2-199b-529b-9d53-5221a6b1dec3")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:J4")
+		(at 66.04 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cfbfe9da-8e16-57a0-af31-255d2d53c8f8")
+		(property "Reference" "J5"
+			(at 66.04 54.61 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "UART7 peripheral"
+			(at 66.04 57.15 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Connector_JST__JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+			(at 66.04 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/6c69dfd9744c15167b2bdb9469440f45.pdf?productCode=C161692"
+			(at 66.04 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C161692"
+			(at 66.04 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C161692"
+			(at 66.04 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BM04B-GHS-TBT(LF)(SN)"
+			(at 66.04 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Connector_Generic.kicad_sym:Conn_01x04"
+			(at 66.04 63.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a952c7e7-f49c-5be5-bb65-22a4cddc5875")
+		)
+		(pin "2"
+			(uuid "b6ea704d-da24-55e6-9a2d-97f0613e973f")
+		)
+		(pin "3"
+			(uuid "94981d16-6d8b-5ccc-8675-237813cb0ccc")
+		)
+		(pin "4"
+			(uuid "9d71a7d9-73f6-58ca-84bc-3e9618f3d3bc")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:ESD")
+		(at 66.04 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d20b05b7-bef5-5dc4-a680-7e1a9649a099")
+		(property "Reference" "U13"
+			(at 83.82 167.64 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "USBLC6-2SC6"
+			(at 83.82 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Package_TO_SOT_SMD__SOT-23-6"
+			(at 66.04 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0d3a2ab954b34651a0695e7ccf534db0.pdf?productCode=C7519"
+			(at 66.04 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7519"
+			(at 66.04 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C7519"
+			(at 66.04 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "USBLC6-2SC6"
+			(at 66.04 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Power_Protection.kicad_sym:USBLC6-2SC6"
+			(at 66.04 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41754fea-be68-5333-9f38-cc3f92c16867")
+		)
+		(pin "3"
+			(uuid "a306e9e3-e03f-58d8-868d-724723e2413b")
+		)
+		(pin "5"
+			(uuid "0f4d7ffa-1cd6-5bf9-ba77-ef4c58116a1b")
+		)
+		(pin "2"
+			(uuid "ca3535d6-002c-5b68-97e1-8584c98eae5c")
+		)
+		(pin "6"
+			(uuid "ef5fe37d-77ad-5ea3-b907-2fa86a3f19e3")
+		)
+		(pin "4"
+			(uuid "7e541372-9da7-59b0-9a38-0b7c918b026f")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:R33")
+		(at 198.12 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e8a18f92-b342-5c9f-ac9a-36c278dffaba")
+		(property "Reference" "R41"
+			(at 198.12 101.6 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "33 / 1%"
+			(at 198.12 104.14 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Resistor_SMD__R_0603_1608Metric"
+			(at 198.12 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23140"
+			(at 198.12 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23140"
+			(at 198.12 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23140"
+			(at 198.12 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF330JT5E"
+			(at 198.12 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Device.kicad_sym:R"
+			(at 198.12 106.68 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f89a326-337f-5007-abf5-6b4a50e587f4")
+		)
+		(pin "2"
+			(uuid "8c27d141-cf9b-5f2d-9f76-f3f562dbacd8")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Autopilot_H743:R33")
+		(at 66.04 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6feb6cb-7f87-54de-a430-03b84ebde561")
+		(property "Reference" "R40"
+			(at 66.04 127 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "33 / 1%"
+			(at 66.04 129.54 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Autopilot_H743:Resistor_SMD__R_0603_1608Metric"
+			(at 66.04 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23140"
+			(at 66.04 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23140"
+			(at 66.04 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23140"
+			(at 66.04 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF330JT5E"
+			(at 66.04 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Library_Source" "Device.kicad_sym:R"
+			(at 66.04 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af431d9c-1af1-5dfa-9656-10378a098e55")
+		)
+		(pin "2"
+			(uuid "a3544681-5580-522e-bb8d-3044e95100d9")
+		)
+		(instances
+			(project "Autopilot_H743"
+				(path "/7a0e0cd2-8f77-5668-8896-2668c859a5ac/1cbea74b-cedf-5999-9113-9fc78c0f94ce"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
