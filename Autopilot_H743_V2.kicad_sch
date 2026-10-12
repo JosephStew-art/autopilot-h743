@@ -4,13 +4,7 @@
 	(generator_version "9.0")
 	(uuid "392c7d53-abcb-5d13-97f4-bb795b133b79")
 	(paper "User" 1189 860)
-	(title_block
-		(title "H743 compact autopilot — revision two")
-		(date "2026-10-12")
-		(rev "2")
-		(company "Joseph Stewart")
-		(comment 1 "Regulated 5V XT30 input | USB-C | labeled subsystem interfaces | prototype")
-	)
+	(title_block (title "H743 compact autopilot — revision two") (date "2026-10-12") (rev "2") (company "Joseph Stewart") (comment 1 "Regulated 5V solder-pad input | USB-C | labeled subsystem interfaces | prototype"))
 	(lib_symbols
 		(symbol "Autopilot_H743_V2:BARO_U12"
 			(exclude_from_sim no)
@@ -11695,104 +11689,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Autopilot_H743_V2:XT30_J2"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-				)
-			)
-			(property "Value" "XT30PW-M / 5V INPUT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "XT30_J2_1_1"
-				(rectangle
-					(start -12.7 15.24)
-					(end 12.7 -15.24)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 17.78 7.62 180)
-					(length 5.08)
-					(name "+5V"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.9 0.9)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 -7.62 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.9 0.9)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
+		(symbol "Autopilot_H743_V2:POWER_PADS_J2" (exclude_from_sim no) (in_bom no) (on_board yes) (property "Reference" "J" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "5V BEC INPUT PADS" (at 0 0 0) (effects (font (size 1 1)))) (property "Footprint" "Autopilot_H743_V2:PowerInput_2Pad_4x4mm_P7mm" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Two ordinary top-side copper solder pads; hand solder wires; no paste or purchased connector" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "POWER_PADS_J2_1_1" (rectangle (start -12.7 15.24) (end 12.7 -15.24) (stroke (width 0.254) (type default)) (fill (type background))) (pin passive line (at 17.78 7.62 180) (length 5.08) (name "+5V" (effects (font (size 1 1)))) (number "2" (effects (font (size 0.9 0.9))))) (pin passive line (at 17.78 -7.62 180) (length 5.08) (name "GND" (effects (font (size 1 1)))) (number "1" (effects (font (size 0.9 0.9)))))) (embedded_fonts no))
 		(symbol "Autopilot_H743_V2:XTAL"
 			(pin_numbers
 				(hide yes)
@@ -11957,7 +11854,10 @@
 			)
 			(embedded_fonts no)
 		)
-	)
+
+(symbol "Autopilot_H743_V2:C47uF" (pin_numbers (hide yes)) (pin_names (offset 0.254)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "47uF / 10V X5R" (at 0.635 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Autopilot_H743_V2:Capacitor_SMD__C_1206_3216Metric" (at 0.9652 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "https://www.lcsc.com/datasheet/C96123.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "Capacitor_SMD__C_1206_3216Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "C47uF_0_1" (polyline (pts (xy -2.032 0.762) (xy 2.032 0.762)) (stroke (width 0.508) (type default)) (fill (type none))) (polyline (pts (xy -2.032 -0.762) (xy 2.032 -0.762)) (stroke (width 0.508) (type default)) (fill (type none)))) (symbol "C47uF_1_1" (pin passive line (at 0 3.81 270) (length 2.794) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 2.794) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+)
+
 	(rectangle
 		(start 706.12 622.3)
 		(end 924.56 805.18)
@@ -12497,17 +12397,7 @@
 		)
 		(uuid "80b173e1-4c10-53c6-bc66-87f5390c576c")
 	)
-	(text "XT30: pin 2 +5V, pin 1 GND. Regulated 4.75–5.25V only."
-		(exclude_from_sim no)
-		(at 251.46 208.28 0)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify left top)
-		)
-		(uuid "815ea983-afd2-5e84-8ff6-0c3b9b08f0f3")
-	)
+	(text "J2: pad 2 +5V, pad 1 GND. Regulated 4.75-5.25 V only. Servo feed branches BEFORE F1." (exclude_from_sim no) (at 251.46 208.28 0) (effects (font (size 0.95 0.95)) (justify left top)) (uuid "815ea983-afd2-5e84-8ff6-0c3b9b08f0f3"))
 	(text "VREF+ / pin 20"
 		(exclude_from_sim no)
 		(at 30.48 137.16 0)
@@ -12618,17 +12508,7 @@
 		)
 		(uuid "a00fa460-b6c2-55d1-9f3f-0b128170b3f3")
 	)
-	(text "V_SERVO_BEC is isolated from V5_SYS; grounds are common.\nExternal BEC provides servo power. XT30 powers avionics at 5V.\nTP pads: 1.2mm signal / 1.5mm power and GND, underside; no paste. Add wire strain relief.\nSignal names and pin assignments match v1. No heater fitted.\nPCB: peripherals placed; internals unplaced / unrouted. DRC is not passed."
-		(exclude_from_sim no)
-		(at 944.88 762 0)
-		(effects
-			(font
-				(size 0.98 0.98)
-			)
-			(justify left top)
-		)
-		(uuid "a13c2710-f5e0-50ce-a0ac-49e714b29c39")
-	)
+	(text "V5_MAIN_IN feeds servos directly from J2; USB powers avionics only.\nServo current bypasses F1, Q1 and U3; no onboard servo fuse or reverse protection.\nRoute +5V and GND with broad copper; size both for combined stall/startup current.\nReturn servo current toward J2, away from sensor circuitry; use parallel vias if needed.\nBEC / servo models TBD: current rating and wire size require final verification.\nC47 is local decoupling; allow for DC-bias loss. Check BEC sag and transients under load.\nTP pads: 1.2mm signal / 1.5mm power and GND, underside, no paste; strain-relieve wires.\nNo heater. Internals unplaced / unrouted. DRC is not passed." (exclude_from_sim no) (at 944.88 762 0) (effects (font (size 0.98 0.98)) (justify left top)) (uuid "a13c2710-f5e0-50ce-a0ac-49e714b29c39"))
 	(text "12  External I2C / battery-monitor inputs"
 		(exclude_from_sim no)
 		(at 480.06 431.8 0)
@@ -24213,7 +24093,7 @@
 		)
 		(uuid "52baaf75-d403-5988-8aaa-3c459c9b3069")
 	)
-	(label "V_SERVO_BEC"
+	(label "V5_MAIN_IN"
 		(at 977.9 731.52 180)
 		(effects
 			(font
@@ -24333,7 +24213,7 @@
 		)
 		(uuid "5a983a5b-73f3-5fc1-b08f-90377deca30f")
 	)
-	(label "V_SERVO_BEC"
+	(label "V5_MAIN_IN"
 		(at 1074.42 706.12 180)
 		(effects
 			(font
@@ -24453,7 +24333,7 @@
 		)
 		(uuid "644aff19-ccd0-5b12-8be3-8853f8af3341")
 	)
-	(label "V_SERVO_BEC"
+	(label "V5_MAIN_IN"
 		(at 977.9 655.32 180)
 		(effects
 			(font
@@ -24823,7 +24703,7 @@
 		)
 		(uuid "7d189e39-aae0-574c-a652-e74d1f298f62")
 	)
-	(label "V_SERVO_BEC"
+	(label "V5_MAIN_IN"
 		(at 1074.42 680.72 180)
 		(effects
 			(font
@@ -25543,7 +25423,7 @@
 		)
 		(uuid "a37eaaa0-a56f-5a5a-a3ae-9b604043f015")
 	)
-	(label "V_SERVO_BEC"
+	(label "V5_MAIN_IN"
 		(at 977.9 680.72 180)
 		(effects
 			(font
@@ -26143,7 +26023,7 @@
 		)
 		(uuid "c36fc835-7ac8-5872-83a2-41b45db90df7")
 	)
-	(label "V_SERVO_BEC"
+	(label "V5_MAIN_IN"
 		(at 977.9 706.12 180)
 		(effects
 			(font
@@ -26433,7 +26313,7 @@
 		)
 		(uuid "d1ab4c1a-d985-5168-8a73-65ef8ff93c36")
 	)
-	(label "V_SERVO_BEC"
+	(label "V5_MAIN_IN"
 		(at 1074.42 731.52 180)
 		(effects
 			(font
@@ -26773,7 +26653,7 @@
 		)
 		(uuid "eca516b6-579e-5579-a824-0054eb829a9d")
 	)
-	(label "V_SERVO_BEC"
+	(label "V5_MAIN_IN"
 		(at 1074.42 655.32 180)
 		(effects
 			(font
@@ -28425,7 +28305,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "V_SERVO_BEC"
+		(property "Value" "V5_MAIN_IN"
 			(at 1089.66 732.79 0)
 			(effects
 				(font
@@ -28487,7 +28367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "V_SERVO_BEC"
+		(property "Rating" "V5_MAIN_IN"
 			(at 1082.04 731.52 0)
 			(effects
 				(font
@@ -34021,7 +33901,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "V_SERVO_BEC"
+		(property "Value" "V5_MAIN_IN"
 			(at 1089.66 707.39 0)
 			(effects
 				(font
@@ -34083,7 +33963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "V_SERVO_BEC"
+		(property "Rating" "V5_MAIN_IN"
 			(at 1082.04 706.12 0)
 			(effects
 				(font
@@ -36538,7 +36418,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "V_SERVO_BEC"
+		(property "Value" "V5_MAIN_IN"
 			(at 993.14 707.39 0)
 			(effects
 				(font
@@ -36600,7 +36480,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "V_SERVO_BEC"
+		(property "Rating" "V5_MAIN_IN"
 			(at 985.52 706.12 0)
 			(effects
 				(font
@@ -38091,117 +37971,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Autopilot_H743_V2:XT30_J2")
-		(at 269.24 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "76a44eda-ce17-5eb2-9692-dd3b12f973f1")
-		(property "Reference" "J2"
-			(at 274.32 58.42 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "XT30PW-M / 5V INPUT"
-			(at 274.32 62.23 0)
-			(effects
-				(font
-					(size 0.95 0.95)
-				)
-			)
-		)
-		(property "Footprint" "Autopilot_H743_V2:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
-			(at 269.24 86.36 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f40c503d729038bd14858056d73ccb74.pdf"
-			(at 269.24 86.36 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 269.24 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C431092"
-			(at 269.24 86.36 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C431092"
-			(at 269.24 86.36 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "XT30PW-M30.G.Y"
-			(at 269.24 86.36 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "XT30PW-M / 5V INPUT"
-			(at 269.24 86.36 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "V1 Interface" ""
-			(at 269.24 86.36 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3c716f9b-8ac2-5924-85c8-3b8ffc0fda68")
-		)
-		(pin "1"
-			(uuid "1fe6ed11-c4f1-5f5a-bf9f-f758b561f999")
-		)
-		(instances
-			(project "Autopilot_H743_V2"
-				(path "/392c7d53-abcb-5d13-97f4-bb795b133b79"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
+	(symbol (lib_id "Autopilot_H743_V2:POWER_PADS_J2") (at 269.24 86.36 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "76a44eda-ce17-5eb2-9692-dd3b12f973f1") (property "Reference" "J2" (at 274.32 58.42 0) (effects (font (size 1 1)))) (property "Value" "5V BEC INPUT PADS" (at 274.32 62.23 0) (effects (font (size 0.95 0.95)))) (property "Footprint" "Autopilot_H743_V2:PowerInput_2Pad_4x4mm_P7mm" (at 269.24 86.36 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 269.24 86.36 0) (effects (font (size 1 1)) (hide yes))) (property "Description" "Two ordinary top-side copper solder pads; hand solder wires; no paste or purchased connector" (at 269.24 86.36 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "LCSC" "" (at 269.24 86.36 0) (effects (font (size 1 1)) (hide yes))) (property "LCSC Part #" "" (at 269.24 86.36 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 269.24 86.36 0) (effects (font (size 1 1)) (hide yes))) (property "Rating" "Regulated 4.75-5.25 V; shared avionics and servo input" (at 269.24 86.36 0) (effects (font (size 1 1)) (hide yes))) (property "V1 Interface" "" (at 269.24 86.36 0) (effects (font (size 1 1)) (hide yes))) (pin "2" (uuid "3c716f9b-8ac2-5924-85c8-3b8ffc0fda68")) (pin "1" (uuid "1fe6ed11-c4f1-5f5a-bf9f-f758b561f999")) (instances (project "Autopilot_H743_V2" (path "/392c7d53-abcb-5d13-97f4-bb795b133b79" (reference "J2") (unit 1)))))
 	(symbol
 		(lib_id "Autopilot_H743_V2:MCU")
 		(at 121.92 200.66 0)
@@ -38625,7 +38395,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "V_SERVO_BEC"
+		(property "Value" "V5_MAIN_IN"
 			(at 993.14 732.79 0)
 			(effects
 				(font
@@ -38687,7 +38457,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "V_SERVO_BEC"
+		(property "Rating" "V5_MAIN_IN"
 			(at 985.52 731.52 0)
 			(effects
 				(font
@@ -43405,7 +43175,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "V_SERVO_BEC"
+		(property "Value" "V5_MAIN_IN"
 			(at 993.14 656.59 0)
 			(effects
 				(font
@@ -43467,7 +43237,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "V_SERVO_BEC"
+		(property "Rating" "V5_MAIN_IN"
 			(at 985.52 655.32 0)
 			(effects
 				(font
@@ -45878,7 +45648,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "V_SERVO_BEC"
+		(property "Value" "V5_MAIN_IN"
 			(at 993.14 681.99 0)
 			(effects
 				(font
@@ -45940,7 +45710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "V_SERVO_BEC"
+		(property "Rating" "V5_MAIN_IN"
 			(at 985.52 680.72 0)
 			(effects
 				(font
@@ -48345,7 +48115,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "V_SERVO_BEC"
+		(property "Value" "V5_MAIN_IN"
 			(at 1089.66 656.59 0)
 			(effects
 				(font
@@ -48407,7 +48177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "V_SERVO_BEC"
+		(property "Rating" "V5_MAIN_IN"
 			(at 1082.04 655.32 0)
 			(effects
 				(font
@@ -49021,7 +48791,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "V_SERVO_BEC"
+		(property "Value" "V5_MAIN_IN"
 			(at 1089.66 681.99 0)
 			(effects
 				(font
@@ -49083,7 +48853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "V_SERVO_BEC"
+		(property "Rating" "V5_MAIN_IN"
 			(at 1082.04 680.72 0)
 			(effects
 				(font
@@ -53498,4 +53268,14 @@
 		)
 	)
 	(embedded_fonts no)
+
+(symbol (lib_id "Autopilot_H743_V2:C47uF") (at 1120.1400 779.7800 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c67d5aff-b0a2-5671-86ef-2284031aa629") (property "Reference" "C47" (at 1127.7600 777.2400 0) (effects (font (size 1 1)) (justify left))) (property "Value" "47uF" (at 1127.7600 781.0500 0) (effects (font (size 0.95 0.95)) (justify left))) (property "Footprint" "Autopilot_H743_V2:Capacitor_SMD__C_1206_3216Metric" (at 1120.1400 779.7800 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://www.lcsc.com/datasheet/C96123.pdf" (at 1120.1400 779.7800 0) (effects (font (size 1 1)) (hide yes))) (property "Description" "" (at 1120.1400 779.7800 0) (effects (font (size 1.27 1.27)))) (property "LCSC" "C96123" (at 1120.1400 779.7800 0) (effects (font (size 1 1)) (hide yes))) (property "LCSC Part #" "C96123" (at 1120.1400 779.7800 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "CL31A476MPHNNNE" (at 1120.1400 779.7800 0) (effects (font (size 1 1)) (hide yes))) (property "Rating" "47uF / 10V X5R; DC-bias derating applies" (at 1120.1400 779.7800 0) (effects (font (size 1 1)) (hide yes))) (property "V1 Interface" "" (at 1120.1400 779.7800 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "02a82bb3-fce2-56aa-8470-a07200446178")) (pin "2" (uuid "f39d1fc1-209b-5426-8f51-372d5fdb688e")) (instances (project "Autopilot_H743_V2" (path "/392c7d53-abcb-5d13-97f4-bb795b133b79" (reference "C47") (unit 1)))))
+
+(wire(pts(xy 1120.14 775.97)(xy 1120.14 768.35))(stroke(width 0)(type default))(uuid "cd87e57a-f4b2-5cee-b3b2-b8cd9134a8d3"))
+
+(label "V5_MAIN_IN"(at 1120.14 768.35 0)(effects(font(size .95 .95))(justify left bottom))(uuid "9bf778ea-5bd9-5184-8c15-b01c8cbcb449"))
+
+(wire(pts(xy 1120.14 783.59)(xy 1120.14 791.21))(stroke(width 0)(type default))(uuid "f0850c61-f495-5d65-bc8b-7a896a4acd33"))
+
+(label "GND"(at 1120.14 791.21 0)(effects(font(size .95 .95))(justify left bottom))(uuid "f57910c7-4e60-540f-95df-0951c2f83ea9"))
 )
