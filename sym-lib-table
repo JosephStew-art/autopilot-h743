@@ -1,1 +1,1 @@
-(sym_lib_table (version 7) (lib (name "Autopilot_H743") (type "KiCad") (uri "${KIPRJMOD}/Autopilot_H743.kicad_sym") (options "") (descr "Local checked component symbols")))
+(sym_lib_table(version 7)(lib(name "Autopilot_H743_V2")(type "KiCad")(uri "${KIPRJMOD}/Autopilot_H743_V2.kicad_sym")(options "")(descr "V2 project symbols")))
